@@ -1,32 +1,24 @@
-  Task Manager API - README
-
 Task Manager API
 ================
 
-Esta es una API para la gestión de tareas (To-Do List) utilizando Spring Boot como backend y Angular 17 como frontend.
+Esta es una API para la gestión de tareas (To-Do List) utilizando Spring Boot como backend.
 
 Requisitos
 ----------
 
-*   Java 17 (OpenJDK o cualquier distribución compatible)
-*   Maven 3.6+ (para construir y ejecutar el proyecto Spring Boot)
-*   Node.js 18.x o superior (para el frontend Angular, opcional)
-*   Postman (para probar los endpoints de la API, opcional)
+* Java 17 (OpenJDK o cualquier distribución compatible)
+* Maven 3.6+ (para construir y ejecutar el proyecto Spring Boot)
 
 Configuración del Proyecto
 --------------------------
 
 ### 1\. Clonar el Repositorio
 
-    git clone https://github.com/tu-usuario/task-manager-api.git
+    git clone https://github.com/jadruiz/task-manager-api.git
 
 ### 2\. Variables de Entorno
 
-Crea un archivo `.env` en la raíz del proyecto backend y añade la variable de entorno para configurar CORS:
-
-    CORS_ALLOWED_ORIGINS=http://localhost:4200
-
-Esta variable define los orígenes permitidos para el intercambio de recursos entre dominios (CORS). Puedes cambiar este valor para permitir otros orígenes.
+Usa el archivo `env.example` (localizado en la carpeta docs del proyecto) para establecer las variables de entorno.
 
 Configuración y Ejecución de la API
 -----------------------------------
@@ -82,22 +74,6 @@ Para probar la API, puedes usar Postman. Asegúrate de tener Postman instalado. 
 
     DELETE {{base_url}}/api/tasks/{id}
 
-Configuración del Frontend (Opcional)
--------------------------------------
-
-Si estás utilizando el frontend de Angular 17 para interactuar con la API, sigue estos pasos:
-
-### 1\. Instalar las Dependencias
-
-    cd frontend/todo-app
-    npm install
-
-### 2\. Ejecutar la Aplicación Angular
-
-    ng serve
-
-El frontend estará disponible en `http://localhost:4200`.
-
 Archivo de Colección de Postman
 -------------------------------
 
@@ -107,14 +83,3 @@ Si necesitas un archivo de colección de Postman para probar los endpoints, pued
 
 Importa este archivo en Postman para tener acceso a todas las solicitudes de la API preconfiguradas.
 
-Notas Adicionales
------------------
-
-*   Asegúrate de tener el archivo `.env` correctamente configurado antes de ejecutar la aplicación.
-*   Para cambiar la configuración de CORS, edita el valor de `CORS_ALLOWED_ORIGINS` en el archivo `.env`.
-*   Para entornos de desarrollo y producción, ajusta las configuraciones según sea necesario.
-
-Contacto
---------
-
-Para más información o reportar problemas, contacta al desarrollador.
